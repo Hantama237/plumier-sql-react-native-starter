@@ -16,11 +16,9 @@ This starter project contains basic monorepo setup using yarn workspace.
 
 # File Structure 
 Project consist of 2 projects: mobileUI and Server. Each project files placed inside `packages` directory.
-> If you want to rename the project directory name other than 'ui' and 'server' you should change the appropriate 
-> project scripts inside `scripts` directory.
 
-### UI
-The UI project (`packages/mobileui`) is a minimal TypeScript react native app created using  [create-react-native-app](https://facebook.github.io/create-react-app/), It will host its expo `http://localhost:`. A proxy to the server side already configured in the `package.json` file.
+### mobileUI
+The mobileUI project (`packages/mobileui`) is a minimal TypeScript react native app created using  [create-react-native-app](https://facebook.github.io/create-react-app/), It will host its expo `http://localhost:`. A proxy to the server side already configured in the `package.json` file.
 
 ### Server
 The server project (`packages/server`) is a minimal Plumier project. It also host its own web server `http://localhost:8000`. You can run the server from the browser, but you need to build the project to move UI production build to the server static files. 
